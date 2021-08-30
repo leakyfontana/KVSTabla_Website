@@ -1,23 +1,22 @@
 body {
   font-family: sans-serif;
   color: #efe4b08a;
+  text-align: center;
 }
 
 h1, 
 h2, 
 h3 {
   color:#ff7f27;
-  text-align: center;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 40px;
   text-transform: uppercase;
-  font-style: italic;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h3 {
@@ -43,15 +42,25 @@ ul {
 
 .main-header {
   /*background-color: #f7f7f7;*/
-  border: 5px solid #800013;
+  border-bottom: 5px solid #800013;
+  border-radius: 10px;
+  display: inline-flex;
+  margin: auto;
+  width: 100%;
   
+}
+
+.header-nav {
+  text-align: right;
+  margin-left: 100px
 }
 
 .section-break {
   /*background-color: #f7f7f7;*/
   border-top: 5px solid #800013;
   border-bottom: 5px solid #800013;
-  margin: 2em;
+  border-radius: 10px;
+  margin: 50px 20px;
 }
 
 body {
@@ -59,8 +68,9 @@ body {
 }
 
 .header-logo {
-  max-width:100%;
-  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 100px;
 }
 
 li:nth-child(even) {
@@ -90,7 +100,8 @@ a:active {
 
 .body-photo {
   max-height: 50%;
-  width: 100% 
+  width: 100%;
+  border-radius: 30px;
 }
 
 .btn {
@@ -98,13 +109,13 @@ a:active {
   background-color:#800013;
   color:#ff7f27;
   font-size: 20px;
-  display: inline-block;
+  display: block;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 30px;
   border: 1px solid #ff7f27;
   transition-duration: .5s;
   cursor: pointer;
-  margin: 100px;
+  margin: auto;
 }
 
 .btn:hover {
