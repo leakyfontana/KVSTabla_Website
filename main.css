@@ -1,8 +1,4 @@
-h1,
-h2,
-h3,
-p,
-li {
+body {
   font-family: sans-serif;
   color: #efe4b08a;
 }
@@ -11,6 +7,7 @@ h1,
 h2, 
 h3 {
   color:#ff7f27;
+  text-align: center;
 }
 
 h1 {
@@ -41,6 +38,7 @@ li {
 ul {
   list-style: none;
   padding: 1em;
+  line-height: 1.5;
 }
 
 .main-header {
@@ -88,4 +86,27 @@ a:hover {
 a:active {
   background-color: #800013;
   color: #ff7f27;
+}
+
+.body-photo {
+  max-height: 50%;
+  width: 100% 
+}
+
+.btn {
+  padding: 15px 32px;
+  background-color:#800013;
+  color:#ff7f27;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #ff7f27;
+  transition-duration: .5s;
+  cursor: pointer;
+  margin: 100px;
+}
+
+.btn:hover {
+  background-color: black;
 }
