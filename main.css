@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
   color: #efe4b08a;
   text-align: center;
+  position: relative;
 }
 
 h1, 
@@ -52,7 +53,9 @@ ul {
 
 .header-nav {
   text-align: right;
-  margin-left: 100px
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 35px;
 }
 
 .section-break {
