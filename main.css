@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   color: #efe4b08a;
   text-align: center;
-  position: relative;
 }
 
 h1, 
@@ -64,6 +67,9 @@ ul {
   border-bottom: 5px solid #800013;
   border-radius: 10px;
   margin: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
