@@ -48,17 +48,15 @@ ul {
   /*background-color: #f7f7f7;*/
   border-bottom: 5px solid #800013;
   border-radius: 10px;
-  display: inline-flex;
-  margin: auto;
-  width: 100%;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
   text-align: right;
-  margin-left: 100px;
-  margin-right: 20px;
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-break {
@@ -67,6 +65,9 @@ ul {
   border-bottom: 5px solid #800013;
   border-radius: 10px;
   margin: 50px 20px;
+}
+
+.section-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +80,6 @@ body {
 .header-logo {
   max-width: 100px;
   max-height: 100px;
-  margin-right: 100px;
 }
 
 li:nth-child(even) {
