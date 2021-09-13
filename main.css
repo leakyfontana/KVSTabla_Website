@@ -70,7 +70,16 @@ ul {
 .section-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+  gap: 30px;
+}
+
+.bookings {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
 }
 
 body {
