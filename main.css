@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Kanit', sans-serif;
   color: #efe4b08a;
   text-align: center;
 }
@@ -15,12 +17,9 @@ h3 {
 }
 
 h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 30px;
+  font-size: 60px;
+  text-shadow: 6.5px 2px 2px #800013;
+  /* text-transform: uppercase; */
 }
 
 h3 {
@@ -46,18 +45,105 @@ ul {
 
 .main-header {
   /*background-color: #f7f7f7;*/
-  border-bottom: 5px solid #800013;
-  border-radius: 10px;
+  /* border-bottom: 5px solid #800013;
+  border-radius: 10px; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 
 .header-nav {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  background: white;
+  color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-toggle {
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: #ff7f27;
+  width: 3em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px }
 
 .section-break {
   /*background-color: #f7f7f7;*/
@@ -65,6 +151,7 @@ ul {
   border-bottom: 5px solid #800013;
   border-radius: 10px;
   margin: 50px 20px;
+  padding: 5px;
 }
 
 .section-box {

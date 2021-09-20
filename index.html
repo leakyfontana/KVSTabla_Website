@@ -16,16 +16,20 @@
 <body>
   <header class="main-header">
     <img class="header-logo" src="images/KVSLogo.png" alt="Image of KVS Logo" />
-    <h1><em> KVS Tabla </em></h1>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
     <nav class="header-nav">
-      <a href="#section-about">About Me</a>
-      <a href="#my-services">My Services</a>
-      <a href="mailto:sid@kvstabla.com">Email Me</a>
-      <a href="https://www.instagram.com/kvstabla/" target="_blank">instagram</a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#section-about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#my-services" class="nav-link">My Services</a></li>
+        <li class="nav-item"><a href="mailto:sid@kvstabla.com" class="nav-link">Email Me</a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/kvstabla/" target="_blank" class="nav-link">instagram</a></li>
+      </ul>
     </nav>
   </header>
+  <h1>KVS Tabla</h1>
   <div class="section-break" id="landing">
-    <h2>Classicly Trained, Modern Sound</h2>
     <div class="section-box">
 
       <div>
@@ -63,6 +67,9 @@
   <footer>
     <p>Copyright &copy; 2021 LeakyDev</p>
   </footer>
+
+  <script src="js/index.js"></script>
+
 </body>
 
 </html>
