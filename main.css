@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -43,14 +45,12 @@ ul {
   line-height: 1.5;
 }
 
-.main-header {
-  /*background-color: #f7f7f7;*/
-  /* border-bottom: 5px solid #800013;
-  border-radius: 10px; */
+header {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
+  padding: 1em;
 }
+
 
 .header-nav {
   position: fixed;
@@ -94,8 +94,8 @@ ul {
   border: 0;
   cursor: pointer;
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: 3em;
+  top: 3em;
   z-index: 1000;
 }
 
@@ -142,10 +142,10 @@ ul {
   right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px }
+.hamburger::before { top: 8px; }
+.hamburger::after { bottom: 8px }
 
-.section-break {
+section {
   /*background-color: #f7f7f7;*/
   border-top: 5px solid #800013;
   border-bottom: 5px solid #800013;
