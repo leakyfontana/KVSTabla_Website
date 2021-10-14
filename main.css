@@ -52,9 +52,9 @@ header {
 }
 
 
-.header-nav {
+.nav {
   position: fixed;
-  background: white;
+  background: black;
   color: black;
   top: 0;
   bottom: 0;
@@ -80,8 +80,8 @@ header {
 .nav-link {
   color: inherit;
   font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
+  font-size: 40px;
+  text-shadow: 6.5px 2px 2px #800013;
 }
 
 .nav-link:hover {
