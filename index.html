@@ -38,22 +38,39 @@
       </div>
       <div class="bookings">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus provident facere molestiae, quas
-          dolores quaerat! Maiores sed eum quam.
+          Sid Komaragiri is a classically trained Tabla player who represents the Farrukhabad Gharana of Tabla. He has been
+          playing Tabla since 2007 and has been learning from Pt. Samir Chatterjee since 2012. Currently he is exploring
+          various ways to incorporate Tabla into Western music genres such as hip/hop, Rap, EDM, and Jazz.
         </p>
-        <button class="btn" type="button"> ✉️ Book Now</button>
+        <button class="collapsible" type="button">Book Now</button>
+        <div class = "content">
+          <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="event">Event Type</label>
+            <select id="event" name="event">
+              <option value="wedding">Wedding</option>
+              <option value="party">Party</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+        
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="Write a short description..." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
       </div>
     </div>
   </section>
-  <section id="section-about" class="section-about">
-    <h2>About Me</h2>
-    <p>
-      Sid Komaragiri is a classically trained Tabla player who represents the Farrukhabad Gharana of Tabla. He has been
-      playing Tabla since 2007 and has been learning from Pt. Samir Chatterjee since 2012. Currently he is exploring
-      various ways to incorporate Tabla into Western music genres such as hip/hop, Rap, EDM, and Jazz.
-    </p>
-  </section>
-  <section id="my-services" class="my-services">
+  <!-- <section id="my-services" class="my-services">
     <h2>My Services</h2>
     <ul>
       <li>Weddings 💍 </li>
@@ -62,7 +79,74 @@
       <li>Collabs 🤝 </li>
       <li>Events 🎫 </li>
     </ul>
-  </section>
+  </section> -->
+  <section class="carousel" aria-label="Gallery">
+    <div class = "section-box">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+          tabindex="0"
+          class="carousel__slide">Weddings 💍
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+            class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+            class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">Birthday Parties 🎈
+        <div class="carousel__snapper">
+        <a href="#carousel__slide1"
+        class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide3"
+        class="carousel__next">Go to next slide</a>
+      </div>
+      </li>
+      <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">Collabs 🤝 
+        <div class="carousel__snapper">
+        <a href="#carousel__slide2"
+        class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide4"
+        class="carousel__next">Go to next slide</a>
+      </div>
+      </li>
+    <li id="carousel__slide4"
+      tabindex="0"
+      class="carousel__slide">Events 🎫
+      <div class="carousel__snapper">
+      <a href="#carousel__slide3"
+      class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+      class="carousel__next">Go to first slide</a>
+    </div>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+        class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+        class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+        class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+        class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</div>
+</section> 
+
   <a href="#">Jump to top</a>
   <footer>
     <p>Copyright &copy; 2021 LeakyDev</p>
