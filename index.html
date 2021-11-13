@@ -22,133 +22,113 @@
     </button>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#section-about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#bio" class="nav-link">About Me</a></li>
         <li class="nav-item"><a href="#my-services" class="nav-link">My Services</a></li>
-        <li class="nav-item"><a href="mailto:sid@kvstabla.com" class="nav-link">Email Me</a></li>
-        <li class="nav-item"><a href="https://www.instagram.com/kvstabla/" target="_blank" class="nav-link">instagram</a></li>
+        <li class="nav-item"><a href="#bookings" data-target="#bookings" class="nav-link">Book Me</a></li>
+        <!-- <li class="nav-item"><a href="https://www.instagram.com/kvstabla/" target="_blank" class="nav-link">instagram</a></li> -->
       </ul>
     </nav>
   </header>
-  <h1>KVS Tabla</h1>
+  <h1 class="title">KVS Tabla</h1>
   <section class="landing">
-    <div class="section-box">
-      <div>
-        <img class="body-photo" src="images/classical_sid.jpg" alt="Image of Sid playing at a classical performance">
-        <p class="user">KVSTabla&copy;</p>
-      </div>
-      <div class="bookings">
-        <p>
-          Sid Komaragiri is a classically trained Tabla player who represents the Farrukhabad Gharana of Tabla. He has been
-          playing Tabla since 2007 and has been learning from Pt. Samir Chatterjee since 2012. Currently he is exploring
-          various ways to incorporate Tabla into Western music genres such as hip/hop, Rap, EDM, and Jazz.
-        </p>
-        <button class="collapsible" type="button">Book Now</button>
-        <div class = "content">
-          <form action="action_page.php">
+    <img class="body-photo" src="images/classical_sid.jpg" alt="Image of Sid playing at a classical performance">
+    <!-- <p class="user">KVSTabla&copy;</p> -->
+    <p id="bio">
+      Sid Komaragiri is a classically trained Tabla player who represents the Farrukhabad Gharana of Tabla. He has
+      been
+      playing Tabla since 2007 and has been learning from Pt. Samir Chatterjee since 2012. Currently he is exploring
+      various ways to incorporate Tabla into Western music genres such as hip/hop, Rap, EDM, and Jazz.
+    </p>
+  </section>
+  <section class="bookme">
+    <div class="bookings" id="bookings">
+      <button class="collapsible" type="button">Book Now</button>
+      <div class="content">
+        <form action="php/mail_handler.php" method="post">
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <label for="event">Event Type</label>
-            <select id="event" name="event">
-              <option value="wedding">Wedding</option>
-              <option value="party">Party</option>
-              <option value="collab">Collaboration</option>
-              <option value="other">Other</option>
-            </select>
-        
-            <label for="details">Details</label>
-            <textarea id="details" name="details" placeholder="Write a short description..." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-          </form>
-        </div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
+          <label for="event">Event Type</label>
+          <select id="event" name="event">
+            <option value="wedding">Wedding</option>
+            <option value="party">Party</option>
+            <option value="collab">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="location">Location</label>
+          <select id="location" name="location">
+            <option value="NYC">New York City(Tri-State)</option>
+            <option value="DMV">DC/MD/VA</option>
+            <option value="other">Other(Please specify in Details)</option>
+          </select>
+
+          <label for="details">Details</label>
+          <textarea id="details" name="details" placeholder="Write a short description..."
+            style="height:200px"></textarea>
+
+          <input type="submit" name="submit" value="Submit">
+
+        </form>
       </div>
+    </div>
     </div>
   </section>
-  <!-- <section id="my-services" class="my-services">
-    <h2>My Services</h2>
-    <ul>
-      <li>Weddings 💍 </li>
-      <li>Birthday Parties 🎈</li>
-      <li>Appearances 🎤 </li>
-      <li>Collabs 🤝 </li>
-      <li>Events 🎫 </li>
-    </ul>
-  </section> -->
-  <section class="carousel" aria-label="Gallery">
-    <div class = "section-box">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1"
-          tabindex="0"
-          class="carousel__slide">Weddings 💍
-          <div class="carousel__snapper">
-            <a href="#carousel__slide4"
-            class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2"
-            class="carousel__next">Go to next slide</a>
-          </div>
-        </li>
-        <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">Birthday Parties 🎈
+  <section class="carousel" aria-label="Gallery" id="my-services">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1" tabindex="0" class="carousel__slide">Weddings 💍
         <div class="carousel__snapper">
-        <a href="#carousel__slide1"
-        class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide3"
-        class="carousel__next">Go to next slide</a>
-      </div>
+          <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+        </div>
       </li>
-      <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">Collabs 🤝 
+      <li id="carousel__slide2" tabindex="0" class="carousel__slide">Birthday Parties 🎈
         <div class="carousel__snapper">
-        <a href="#carousel__slide2"
-        class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide4"
-        class="carousel__next">Go to next slide</a>
-      </div>
+          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </div>
       </li>
-    <li id="carousel__slide4"
-      tabindex="0"
-      class="carousel__slide">Events 🎫
-      <div class="carousel__snapper">
-      <a href="#carousel__slide3"
-      class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide1"
-      class="carousel__next">Go to first slide</a>
-    </div>
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-        class="carousel__navigation-button">Go to slide 1</a>
+      <li id="carousel__slide3" tabindex="0" class="carousel__slide">Collabs 🤝
+        <div class="carousel__snapper">
+          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </div>
       </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-        class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-        class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-        class="carousel__navigation-button">Go to slide 4</a>
+      <li id="carousel__slide4" tabindex="0" class="carousel__slide">Events 🎫
+        <div class="carousel__snapper">
+          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </div>
       </li>
     </ol>
-  </aside>
-</div>
-</section> 
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+        </li>
+      </ol>
+    </aside>
+  </section>
 
-  <a href="#">Jump to top</a>
+
   <footer>
+    <a href="#">Jump to top</a>
     <p>Copyright &copy; 2021 LeakyDev</p>
   </footer>
 
