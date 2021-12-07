@@ -1,3 +1,5 @@
+// JS for Hamburger
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link')
 
@@ -10,6 +12,9 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+
+// JS for bookings button
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
