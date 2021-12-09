@@ -129,14 +129,31 @@ header {
   padding: 1em;
 }
 
-.instagram {
+.icon {
   position: absolute;
   color: #ff7f27;
   top: 2.1em;
-  right: 7em;
   height: 30px;
   width: 30px;
 }
+
+.icon:hover {
+  color: #800013;
+}
+
+.instagram {
+  right: 5.5em;
+}
+
+.tiktok {
+  right: 8.5em;
+}
+
+.youtube {
+  right: 11.5em;
+}
+
+
 
 
 
@@ -209,7 +226,8 @@ header {
 
 .hamburger {
   display: block;
-  position: relative;
+  position: fixed;
+  right: 2em;
 }
 
 .hamburger,
@@ -545,13 +563,13 @@ ol, li {
 }
 
 #carousel__slide1 {
-  background-image: url(images/KVSCloseup.jpg);
+  /* background-image: url(images/KVSCloseup.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#carousel__slide1::before {
+#carousel__slide1 {
   content: "Weddings 💍";  
 }
 
@@ -562,9 +580,6 @@ ol, li {
   background-position: center;
 }
 
-#carousel__slide2::before {
-  content: "Have you seen a tabla player perform with a DJ at a party? This unique combo is a great way to add a different character to your party!";  
-}
 
 #carousel__slide3 {
   background-image: url(images/classical_sid.jpg);
@@ -573,9 +588,6 @@ ol, li {
   background-position: center;
 }
 
-#carousel__slide3::before {
-  content: "KVStabla is open to collaborating with all kinds of musicians/dancers. Contact us to book a practice session!";  
-}
 
 #carousel__slide4 {
   background-image: url(images/classical_sid.jpg);
@@ -584,8 +596,9 @@ ol, li {
   background-position: center;
 }
 
-#carousel__slide4::before {
-  content: "Weddings 💍";  
+.carousel__slide h1 {
+  text-align: center;
+  /* margin: auto; */
 }
 
 footer {

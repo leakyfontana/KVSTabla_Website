@@ -31,8 +31,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+//JQuery to open Bookings section from nav-link in Hamburger
+
+$(document).on('click', '#booking-link', function(event) { 
+  $("#bookings button").trigger('click'); 
+});
+
+
 //Instantiate lazy-load
 
-const el = document.querySelector('img');
-const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
