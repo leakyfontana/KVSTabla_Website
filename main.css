@@ -27,10 +27,15 @@ body {
   font-family: 'Kanit', sans-serif;
   color: #efe4b08a;
   background-color: black;
-  text-align: center;
+  text-align: left;
   margin-left: 50px;
   margin-right: 50px;
 
+}
+
+.title {
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 @media (min-width:1025px) {
@@ -124,34 +129,28 @@ ul {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   padding: 1em;
 }
 
-.icon {
+.icons {
   position: absolute;
   color: #ff7f27;
   top: 2.1em;
-  height: 30px;
-  width: 30px;
+  right: 6.5em;
+  display: flex;
+  flex-direction: row;
+  gap: .75em;
 }
 
 .icon:hover {
   color: #800013;
 }
 
-.instagram {
-  right: 5.5em;
+.icon {
+  height: 30px;
+  width: 30px;
 }
 
-.tiktok {
-  right: 8.5em;
-}
-
-.youtube {
-  right: 11.5em;
-}
 
 
 
@@ -217,7 +216,7 @@ header {
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-8px);
 }
 
 .nav-open .hamburger::after {
@@ -226,8 +225,7 @@ header {
 
 .hamburger {
   display: block;
-  position: fixed;
-  right: 2em;
+  position: relative;
 }
 
 .hamburger,
@@ -235,8 +233,8 @@ header {
 .hamburger::after {
   background: #ff7f27;
   width: 3em;
-  height: 3px;
-  border-radius: 1em;
+  height: 4.5px;
+  border-radius: 1.5em;
   transition: transform 250ms ease-in-out;
 }
 
@@ -248,8 +246,8 @@ header {
   right: 0;
 }
 
-.hamburger::before { top: 8px; }
-.hamburger::after { bottom: 8px }
+.hamburger::before { top: 9px; }
+.hamburger::after { bottom: 9px }
 
 section {
   border-radius: 10px;
@@ -258,8 +256,10 @@ section {
 }
 
 .header-logo {
+  position: absolute;
   max-width: 100px;
   max-height: 100px;
+  left: 2em;
 }
 
 li:nth-child(even) {
@@ -603,6 +603,7 @@ ol, li {
 
 footer {
   margin-top: 2em;
+  text-align: center;
 }
 
 
