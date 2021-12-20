@@ -569,9 +569,6 @@ ol, li {
   background-position: center;
 }
 
-#carousel__slide1 {
-  content: "Weddings 💍";  
-}
 
 #carousel__slide2 {
   background-image: url(images/KVSCloseup2.jpg);
@@ -595,10 +592,12 @@ ol, li {
   background-size: cover;
   background-position: center;
 }
+.carousel {
+  filter: red;
+}
 
 .carousel__slide h1 {
   text-align: center;
-  /* margin: auto; */
 }
 
 footer {
