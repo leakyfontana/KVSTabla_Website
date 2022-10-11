@@ -92,6 +92,10 @@ body {
     grid-gap: 3rem;
   }
 
+  .help_text {
+    font-size: 14px;
+  }
+
 }
 
 
