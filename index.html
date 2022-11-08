@@ -86,25 +86,6 @@
             />
           </svg>
         </a>
-        <a
-          href="https://youtube.com/channel/UCfcgKvXfFP916Ng8wlTkEOg"
-          target="__blank"
-          alt="Link to KVSTabla's Youtube"
-        >
-          <svg
-            class="icon youtube"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-youtube"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-            />
-          </svg>
-        </a>
       </div>
       <button
         class="nav-toggle"
@@ -134,11 +115,16 @@
       />
       <!-- <p class="user">KVSTabla&copy;</p> -->
       <p class="bio" id="bio">
-        Sid is a classically trained Tabla player who represents the Farrukhabad
-        Gharana of Tabla. He has been playing Tabla since 2007 and has been
-        learning from Pt. Samir Chatterjee since 2012. Currently, he is
-        exploring various ways to incorporate Tabla into western music genres
-        such as Hip/Hop, Latin Pop, EDM, and many others.
+        Sid, also known as KVSTabla, is a classically trained tabla player based
+        out of Manhattan, New York City. He began training when he was 7 years
+        old and has been learning from Pt. Samir Chatterjee since 2012.
+        Throughout his time playing tabla, he has won various awards and
+        national competitions. Outside of Indian classical concerts, Sid has
+        performed at a plethora of luxury weddings as a fusion and classical
+        artist. He also performs at many unique events. Most recently, he shared
+        the stage with a couple others to open for Jay Sean at the 2022 Times
+        Square Diwali party (50,000+ people). He also played for the Mayyur
+        Girotra runway show during New York Fashion week.
       </p>
       <section class="bookme" id="bookings">
         <button class="collapsible" type="button">Book Now</button>
@@ -170,9 +156,10 @@
 
             <label for="event">Event Type</label>
             <select id="event" name="event">
+              <option value="cocktail">Cocktail Hour</option>
+              <option value="private_event">Private Event</option>
               <option value="wedding">Wedding</option>
-              <option value="party">Party</option>
-              <option value="collab">Collaboration</option>
+              <option value="concert">Concert</option>
               <option value="other">Other</option>
             </select>
 
@@ -194,7 +181,8 @@
             <input type="submit" name="submit" value="Submit" />
             <p class="help_text">
               * If you do not receive a response email in 24 hours please email
-              <a href="mailto: kvvstabla@gmail.com">kvstabla@gmail.com</a> directly.
+              <a href="mailto: kvvstabla@gmail.com">kvstabla@gmail.com</a>
+              directly.
             </p>
           </form>
         </div>
@@ -203,12 +191,12 @@
         <ol class="carousel__viewport">
           <li
             id="carousel__slide1"
-            data-background-image="images/KVSCloseup.jpg"
+            data-background-image="images/cocktail.jpg"
             tabindex="0"
             class="lozad carousel__slide"
-            alt="Sid playing Tabla at a wedding"
+            alt="Sid playing Tabla at a cocktail hour"
           >
-            <h1>Weddings</h1>
+            <h1>Cocktail Hours</h1>
             <div class="carousel__snapper">
               <a href="#carousel__slide4" class="carousel__prev"
                 >Go to last slide</a
@@ -221,11 +209,11 @@
           <li
             id="carousel__slide2"
             tabindex="0"
-            data-background-image="images/parties.jpg"
+            data-background-image="images/private_event.jpg"
             class="lozad carousel__slide"
-            alt="Sid playing Tabla at a large outdoor event"
+            alt="Sid playing Tabla at an outdoor private pool party"
           >
-            <h1>Parties</h1>
+            <h1>Private Events</h1>
             <div class="carousel__snapper">
               <a href="#carousel__slide1" class="carousel__prev"
                 >Go to previous slide</a
@@ -238,11 +226,11 @@
           <li
             id="carousel__slide3"
             tabindex="0"
-            data-background-image="images/collabs.jpg"
+            data-background-image="images/concerts.jpg"
             class="lozad carousel__slide"
-            alt="Sid performing in front of the Washington monument with a Bhangra dance team"
+            alt="Sid performing with a Sitar player"
           >
-            <h1>Collabs</h1>
+            <h1>Concerts</h1>
             <div class="carousel__snapper">
               <a href="#carousel__slide2" class="carousel__prev"
                 >Go to previous slide</a
@@ -257,7 +245,7 @@
             tabindex="0"
             data-background-image="images/other.jpg"
             class="lozad carousel__slide"
-            alt="Sid performing Tabla with a Sitar player"
+            alt="Sid performing Tabla with two Dhol players at an event in Times Square NYC"
           >
             <h1>Other</h1>
             <div class="carousel__snapper">
@@ -302,8 +290,9 @@
 
     <footer>
       <a href="#">Jump to top</a>
-      <p>Copyright &copy; 2022 
-          <a href="https://www.xanderdyer.com">LeakyDev</a>
+      <p>
+        Copyright &copy; 2022
+        <a href="https://www.xanderdyer.com">LeakyDev</a>
       </p>
     </footer>
   </body>
