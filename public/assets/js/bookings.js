@@ -1,19 +1,3 @@
-// JS for Hamburger
-
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav-link')
-
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
-
-
 // JS for bookings button
 
 var coll = document.getElementsByClassName("collapsible");
@@ -36,9 +20,3 @@ for (i = 0; i < coll.length; i++) {
 $(document).on('click', '#booking-link', function(event) { 
   $("#bookings button").trigger('click'); 
 });
-
-
-//Instantiate lazy-load
-
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
