@@ -568,7 +568,7 @@ ol, li {
 }
 
 #carousel__slide1 {
-  /* background-image: url(images/KVSCloseup.jpg); */
+  background-image: url(../images/KVSCloseup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -576,7 +576,7 @@ ol, li {
 
 
 #carousel__slide2 {
-  background-image: url(images/KVSCloseup2.jpg);
+  background-image: url(../images/KVSCloseup2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -584,7 +584,7 @@ ol, li {
 
 
 #carousel__slide3 {
-  background-image: url(images/classical_sid.jpg);
+  background-image: url(../images/classical_sid.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -592,7 +592,7 @@ ol, li {
 
 
 #carousel__slide4 {
-  background-image: url(images/classical_sid.jpg);
+  background-image: url(../images/classical_sid.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
